@@ -1,17 +1,19 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from 'styled-components' // Importa ferramentas para criar estilos e animações
 
+// Cria uma animação para o botão, onde ele sobe e desce
 const buttonAnimation = keyframes`
   0% {
-    transform: translateY(0);
+    transform: translateY(0); // Começa na posição original
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-6px); // Sobe um pouco
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0); // Volta para a posição original
   }
 `
 
+// Estilo principal para o contêiner da seção de histórico
 export const HistoryContainer = styled.main`
   flex: 1;
   padding: 3.5rem;
@@ -25,6 +27,7 @@ export const HistoryContainer = styled.main`
   }
 `
 
+// Estilo para a lista de histórico
 export const HistoryList = styled.div`
   flex: 1;
   overflow: auto;
@@ -99,16 +102,19 @@ export const HistoryList = styled.div`
   }
 `
 
+// Define as cores possíveis para o status dos ciclos
 const STATUS_COLOR = {
   'warning-light': 'warning-light',
   'ignite-mid': 'ignite-mid',
   'ec-light': 'ec-light',
-} as const // para TS entender que não poderá ser qlq string
+} as const // Garante que só essas cores podem ser usadas
 
+// Define as propriedades do componente Status
 interface StatusProps {
-  statusColor: keyof typeof STATUS_COLOR
+  statusColor: keyof typeof STATUS_COLOR // A cor do status deve ser uma das definidas acima
 }
 
+// Estilo para o status de cada ciclo (Concluído, Interrompido, Em andamento)
 export const Status = styled.span<StatusProps>`
   display: flex;
   align-items: center;
