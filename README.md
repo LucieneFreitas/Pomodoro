@@ -45,15 +45,25 @@ Os principais objetivos desta aplicação foram treinar o uso das seguintes ferr
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✔ [Vite](https://vitejs.dev/)
+<br/>
 ✔ [ReactJS](https://reactjs.org/)
+<br/>
 ✔ [TypeScript](https://www.typescriptlang.org/)
+<br/>
 ✔ [Styled Components](https://styled-components.com/docs)
+<br/>
 ✔ [Phosphor Icons](https://phosphoricons.com/)
+<br/>
 ✔ [date-fns](https://date-fns.org/docs/Getting-Started)
+<br/>
 ✔ [React Hook Form](https://react-hook-form.com/)
+<br/>
 ✔ [Zod](https://github.com/colinhacks/zod)
+<br/>
 ✔ [React Router](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+<br/>
 ✔ [Immer](https://github.com/immerjs/immer)
+<br/>
 
 
 ---
